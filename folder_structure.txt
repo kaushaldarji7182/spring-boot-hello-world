@@ -1,0 +1,71 @@
+.
+|-- filesystem -> /
+|-- folder_structure.txt
+|-- get-docker.sh
+`-- spring-boot-hello-world
+    |-- Dockerfile
+    |-- README.md
+    |-- k8s
+    |   |-- deployment.yaml
+    |   `-- service.yaml
+    |-- pom.xml
+    |-- src
+    |   |-- main
+    |   |   |-- java
+    |   |   |   `-- com
+    |   |   |       `-- example
+    |   |   |           `-- helloworld
+    |   |   |               |-- HelloWorldApplication.java
+    |   |   |               `-- controller
+    |   |   |                   `-- HelloWorldController.java
+    |   |   `-- resources
+    |   |       `-- application.properties
+    |   `-- test
+    |       `-- java
+    |           `-- com
+    |               `-- example
+    |                   `-- helloworld
+    |                       |-- HelloWorldApplicationTests.java
+    |                       `-- controller
+    |                           `-- HelloWorldControllerTest.java
+    `-- target
+        |-- classes
+        |   |-- application.properties
+        |   `-- com
+        |       `-- example
+        |           `-- helloworld
+        |               |-- HelloWorldApplication.class
+        |               `-- controller
+        |                   `-- HelloWorldController.class
+        |-- generated-sources
+        |   `-- annotations
+        |-- generated-test-sources
+        |   `-- test-annotations
+        |-- maven-archiver
+        |   `-- pom.properties
+        |-- maven-status
+        |   `-- maven-compiler-plugin
+        |       |-- compile
+        |       |   `-- default-compile
+        |       |       |-- createdFiles.lst
+        |       |       `-- inputFiles.lst
+        |       `-- testCompile
+        |           `-- default-testCompile
+        |               |-- createdFiles.lst
+        |               `-- inputFiles.lst
+        |-- spring-boot-2-hello-world-1.0.2-SNAPSHOT.jar
+        |-- spring-boot-2-hello-world-1.0.2-SNAPSHOT.jar.original
+        |-- surefire-reports
+        |   |-- TEST-com.example.helloworld.HelloWorldApplicationTests.xml
+        |   |-- TEST-com.example.helloworld.controller.HelloWorldControllerTest.xml
+        |   |-- com.example.helloworld.HelloWorldApplicationTests.txt
+        |   `-- com.example.helloworld.controller.HelloWorldControllerTest.txt
+        `-- test-classes
+            `-- com
+                `-- example
+                    `-- helloworld
+                        |-- HelloWorldApplicationTests.class
+                        `-- controller
+                            `-- HelloWorldControllerTest.class
+
+41 directories, 28 files
