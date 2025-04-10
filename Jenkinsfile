@@ -4,12 +4,10 @@ pipeline {
 
   stages {
 
-    stage('git cloninig') {
+    stage('git cloning') {
 
       steps {
-
-        git branch: 'Feature', url:'https://github.com/kaushaldarji7182/spring-boot-hello-world.git'
-
+        git branch: 'feature', url:'https://github.com/kaushaldarji7182/spring-boot-hello-world.git'
       }
 
     }
@@ -17,11 +15,8 @@ pipeline {
     stage('Building jar file for project') {
 
       steps {
-
         sh "mvn dependency:go-offline"
-
         sh "mvn clean package -DskipTests"
-
       }
 
     }
