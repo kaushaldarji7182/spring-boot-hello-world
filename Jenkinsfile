@@ -1,3 +1,4 @@
+@Library('shared@main') _
 pipeline {
     agent any
 
@@ -42,8 +43,7 @@ pipeline {
 	stage("groovy"){
 	steps{
 	script{
-		def message=kaushal()
-			echo message
+			kaushal()
 		}
 	}	
 	}

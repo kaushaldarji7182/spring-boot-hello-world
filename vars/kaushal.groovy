@@ -1,6 +1,8 @@
 // vars/kaushal.groovy
 
 def call() {
-    return "Hello, World!"
+	stage("kaushal"){
+		echo  "Hello, World!"
 }
+ }
 
