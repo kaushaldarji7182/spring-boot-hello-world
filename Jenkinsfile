@@ -33,7 +33,6 @@ pipeline {
             steps{
                 script{
                     sh '''
-                    kubectl delete deployment myapp-deployment || true
                      kubectl apply -f deployment.yaml
                     kubectl apply -f service.yaml
                     '''
