@@ -39,6 +39,14 @@ pipeline {
                 }
             }
         }
+	stage("groovy"){
+	steps{
+	scriptt{
+		def message=kaushal()
+			echo message
+		}
+	}	
+	}
     }
 }
 
