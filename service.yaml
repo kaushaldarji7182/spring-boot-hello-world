@@ -1,30 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  creationTimestamp: "2025-05-26T07:13:52Z"
-  labels:
-    app: springboot-app
-  name: spring-svc
-  namespace: default
-  resourceVersion: "5777"
-  uid: 3373ac81-17c0-4cca-ad24-acee3fc4f534
+  name: springboot-service
 spec:
-  clusterIP: 10.100.136.181
-  clusterIPs:
-  - 10.100.136.181
-  externalTrafficPolicy: Cluster
-  internalTrafficPolicy: Cluster
-  ipFamilies:
-  - IPv4
-  ipFamilyPolicy: SingleStack
-  ports:
-  - nodePort: 30150
-    port: 8080
-    protocol: TCP
-    targetPort: 8080
+  type: NodePort
   selector:
     app: springboot-app
-  sessionAffinity: None
-  type: NodePort
-status:
-  loadBalancer: {}
+  ports:
+    - protocol: TCP
+      port: 8080        # Service port
+      targetPort: 8080  # Container port
+      nodePort: 32682   # Optional fixed NodePort (must be in range 30000-32767)
+
