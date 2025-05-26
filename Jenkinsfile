@@ -41,7 +41,7 @@ pipeline {
         }
 	stage("groovy"){
 	steps{
-	scriptt{
+	script{
 		def message=kaushal()
 			echo message
 		}
